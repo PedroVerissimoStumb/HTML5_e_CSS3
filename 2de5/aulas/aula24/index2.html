@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grouping Tags</title>
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: dimgray;
+                margin: 0px;
+            }
+            header
+            {
+                width: 600px;
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+            }
+            article
+            {
+                padding: 5px;
+                background-color: lightgray;
+            }
+            main
+            {
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 33px 0px 30px 0px;
+            }
+            footer
+            {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 1px;
+                margin: 0px;
+            }
+            article > aside
+            {
+                background-color: rgb(117, 117, 117);
+            }
+            nav
+            {
+                background-color: rgb(59, 59, 59);
+                box-shadow: 1px 1px 1px black;
+            }
+            nav > a
+            {
+                text-decoration: none;
+                color: rgb(152, 184, 255);
+                padding: 3px;
+                font-weight: bold;
+            }
+            nav > a:hover
+            {
+                color: red;
+                text-decoration: underline;
+            }
+            footer > p
+            {
+                margin: 0px;
+            }
+            section > article
+            {
+                border-radius: 33px 0px 30px 0px;
+            }
+            article > p
+            {
+                border-radius: 33px 0px 30px 0px;
+            }
+            #bola
+            {
+                height: 100px;
+                width: 100px;
+                margin: 100px auto;
+                background-color: white;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Meu Site</h1>
+            <nav>
+                <a href="#" rel="external" target="_blank">link</a>
+                <a href="#" rel="external" target="_blank">link</a>
+                <a href="#" rel="external" target="_blank">link</a>
+                <a href="#" rel="external" target="_blank">link</a>
+                <a href="#" rel="external" target="_blank">link</a>
+            </nav>
+        </header>
+        <main>
+            <section id="assunto">
+
+            </section>
+            <section id="noticias">
+
+                <article>
+
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A blanditiis cum tempore, ea iure eum. Minima dolore asperiores, id possimus eos tempore quae, iure maxime qui ipsa repudiandae rem aspernatur.</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+
+                </article>
+
+            </section>
+
+        </main>
+        <footer>
+            <p>Desenvolvido por CursoemVideo</p>
+        </footer>
+
+        <div id="bola"></div>
+
+    </body>
+</html>

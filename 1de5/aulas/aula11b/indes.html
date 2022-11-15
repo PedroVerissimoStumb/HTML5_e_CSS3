@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abriri esse site em varios despositivos diferentere.
+        ou simplesmente almente ou diminua o tamanho de seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- Se a imagem for menor do que 750px não emprima esse comando! -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- Se a imagem for menor do que 1000px não emprima esse comando! -->
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio src="midia/rappy.mp3" controls></audio>
+    <p>Ou</p>
+    <audio preload="metadata" controls>
+        <source src="midia/rappy.mp3" type="audio/mpeg">
+        <source src="midia/rappy.ogg" type="audio/ogg">
+        <source src="midia/rappy.wav" type="audio/wav"> <!-- Tente não usar, pois eles são MUITO PESADO -->
+        <p>Infelizmente seu navegador não consegue reproduzir o audio 
+        <a href="midia/rappy.mp3">clique aqui para baixar o audio</a>.</p>
+    </audio>
+</body>
+</html>

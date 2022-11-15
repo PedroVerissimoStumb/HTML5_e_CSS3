@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="TP-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testando Responsividade</title>
+        <style>
+            body
+            {
+                background-color: gray;
+            }
+            main
+            {
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+
+                min-width: 280px;
+                max-width: 800px;
+                margin: auto; /* Para centralizar indemprendente do tamanho da tela */
+            }
+            #imgCenter
+            {                
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, temporibus omnis perferendis numquam architecto obcaecati delectus quia. Dolore, pariatur, alias illo quod animi ex repellat non amet recusandae repellendus culpa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi excepturi alias nostrum corrupti unde mollitia, aliquid delectus quam rerum maxime distinctio assumenda impedit nesciunt repellat voluptatibus et sequi amet!
+            </p>
+            <picture>
+                <source id="imgCenter" media="(max-width: 840px)" srcset="../imagens/irina-blok-pq.jpg"> <!-- SE NÃO FOR MAIOR DE 800PX EXECUTE -->
+                <img src="../imagens/irina-blok.jpg" alt="Irina blok">
+            </picture>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, temporibus omnis perferendis numquam architecto obcaecati delectus quia. Dolore, pariatur, alias illo quod animi ex repellat non amet recusandae repellendus culpa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi excepturi alias nostrum corrupti unde mollitia, aliquid delectus quam rerum maxime distinctio assumenda impedit nesciunt repellat voluptatibus et sequi amet!
+            </p>
+        </main>
+    </body>
+</html>
