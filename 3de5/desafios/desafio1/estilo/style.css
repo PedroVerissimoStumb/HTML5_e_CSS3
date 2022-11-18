@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+html, body
+{
+    min-width: 100vh;
+    background-color: darkgray;
+}
+
+
+
+header
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1
+{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p
+{
+    padding-bottom: 50px;
+}
+
+header a, footer a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+section
+{
+    background-color: rgb(73, 73, 73);
+    color: white;
+    padding: 10vh 0vh 10vh 0vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal
+{
+    background-color: white;
+    color: black;
+}
+
+section.imagem > p
+{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+section.imagem#img1
+{
+    background: black url('../imagens/background001.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+section.imagem#img2
+{
+    background: black url('../imagens/background002.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
