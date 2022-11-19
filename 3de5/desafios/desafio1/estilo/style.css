@@ -80,6 +80,7 @@ section
     padding-left: 30px;
     font-family: var(--font3);
     font-size: 2.5vw;
+
 }
 
 section.normal
@@ -88,22 +89,33 @@ section.normal
     color: black;
 }
 
+section.normal > p
+{
+    padding-bottom: 2em;
+}
+
+section.imagem
+{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.76);
+}
+
 section.imagem > p
 {
     width: 400px;
     background-color: rgba(0, 0, 0, 0.562);
     border-radius: 10px;
     padding-left: 10px;
+    text-shadow: 2.5px 2.5px 0px black;
 }
 
 section.imagem#img1
 {
-    background: black url('../imagens/background001.jpg') right center no-repeat fixed;
+    background: black url('../imagens/background001.jpg') center center no-repeat fixed;
     background-size: cover;
 }
 
 section.imagem#img2
 {
-    background: black url('../imagens/background002.jpg') right center no-repeat fixed;
+    background: black url('../imagens/background002.jpg') center center no-repeat fixed;
     background-size: cover;
 }
