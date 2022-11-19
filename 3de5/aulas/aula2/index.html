@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabelas</title>
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: gray;
+            }
+            h1
+            {
+                text-align: center;
+            }
+            table
+            {
+                width: 400px;
+                border-collapse: collapse;
+                border: 3px solid red;
+                margin: auto;
+            }
+            tr.linha
+            {
+                background-color: black;
+                color: white;
+            }
+            tr.linha:hover
+            {
+                background-color: white;
+                color: black;
+            }
+            td.dado:hover
+            {
+                background-color: yellow;
+                color: rgb(0, 177, 0);
+            }
+            td
+            {
+                border: 1px solid rgb(0, 89, 255);
+                text-align: center;
+                padding: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Minhas tabelas</h1>
+        <!--
+            HIERARQUIA DE TABELA (simples)
+            TABLE = tabela
+                TABLE ROW("<tr>") = linha de tabela
+                    TABLE HEADER = cabeçalho de tabela
+                    TABLE DATA = dados da tabela
+        -->
+        <table>
+            <tr class="linha"> <!-- Primeira linha -->
+                <td class="dado">A1</td> <!-- dado -->
+                <td class="dado">B1</td> <!-- dado -->
+                <td class="dado">C1</td> <!-- dado -->
+            </tr>
+            <tr class="linha"> <!-- Segunda linha -->
+                <td class="dado">A2</td> <!-- dado -->
+                <td class="dado">B2</td> <!-- dado -->
+                <td class="dado">C2</td> <!-- dado -->
+            </tr>
+            <tr class="linha"> <!-- Primeira linha -->
+                <td class="dado">A3</td> <!-- dado -->
+                <td class="dado">B3</td> <!-- dado -->
+                <td class="dado">C3</td> <!-- dado -->
+            </tr>
+            <tr class="linha"> <!-- Primeira linha -->
+                <td class="dado">A4</td> <!-- dado -->
+                <td class="dado">B4</td> <!-- dado -->
+                <td class="dado">C4</td> <!-- dado -->
+            </tr>
+        </table>
+    </body>
+</html>
