@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabelas</title>
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: black;
+                color: rgb(0, 255, 30);
+            }
+
+            h1
+            {
+                text-align: center;
+            }
+
+            caption
+            {
+                font-size: 1.5em;
+                font-weight: bold;
+                padding: 10px;
+                background-color: rgb(139, 139, 139);
+            }
+
+            table
+            {
+                width: 400px;
+                margin: auto;
+                border-collapse: collapse;
+                position: relative;
+            }
+
+            td, th
+            {
+                height: 40px;
+                border: 1px solid rgb(255, 255, 255);
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            thead > tr > th
+            {
+                position: sticky;
+                top: -1px;
+                background-color: rgb(54, 54, 54);
+            }
+
+            tbody tr:nth-child(2n-1)
+            {
+                background-color: rgb(139, 139, 139);
+            }
+
+            thead, tfoot
+            {
+                background-color: rgb(77, 77, 77);
+            }
+
+            td.num, th.ld_num
+            {
+                text-align: right;
+                width: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Uso de tabelas grandes</h1>
+        <!--
+            ANATOMIA PARA TABELAS GRANDES
+            TABLE
+                CAPTION = legenda da tabela
+                THEAD = cabeça
+                    TR, TD, TH
+                TBODY = corpo
+                    TR, TD, TH
+                TFOOT = rodapé
+                    TR, TD, TH
+        -->
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead> <!-- Cabeça -->
+                <tr> <!-- Linha de tabela -->
+                    <th scope="col">Estado</th> <!-- th = th - ead -->
+                    <th scope="col" class="ld_num">População</th> <!-- th = th - ead -->
+                </tr>
+            </thead>
+            <tbody> <!-- Corpo -->
+                <tr>
+                    <td>São Paulo</td> <!-- td = td - ata -->
+                    <td class="num">41.262.199</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Minas Gerais</td> <!-- td = td - ata -->
+                    <td class="num">19.597.330</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td> <!-- td = td - ata -->
+                    <td class="num">15.989.929</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Bahia</td> <!-- td = td - ata -->
+                    <td class="num">14.016.906</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Paraná</td> <!-- td = td - ata -->
+                    <td class="num">10.444.526</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Sul</td> <!-- td = td - ata -->
+                    <td class="num">10.693.929</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td> <!-- td = td - ata -->
+                    <td class="num">8.796.448</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Ceará</td> <!-- td = td - ata -->
+                    <td class="num">8.452.381</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Pará</td> <!-- td = td - ata -->
+                    <td class="num">7.581.051</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Santa Catarina</td> <!-- td = td - ata -->
+                    <td class="num">6.248.436</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Goiás</td> <!-- td = td - ata -->
+                    <td class="num">6.003.788</td> <!-- td = td - ata -->
+                </tr>
+                
+                <tr>
+                    <td>Maranhão</td> <!-- td = td - ata -->
+                    <td class="num">6.574.789</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Amazonas</td> <!-- td = td - ata -->
+                    <td class="num">3.483.985</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Espírito Santo</td> <!-- td = td - ata -->
+                    <td class="num">3.514.952</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Paraíba</td> <!-- td = td - ata -->
+                    <td class="num">3.766.528</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Mato Grosso</td> <!-- td = td - ata -->
+                    <td class="num">3.035.122</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Norte</td> <!-- td = td - ata -->
+                    <td class="num">3.168.027</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Alagoas</td> <!-- td = td - ata -->
+                    <td class="num">3.120.494</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Piauí</td> <!-- td = td - ata -->
+                    <td class="num">3.118.360</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Distrito Federal</td> <!-- td = td - ata -->
+                    <td class="num">2.570.160</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Mato Grosso do Sul</td> <!-- td = td - ata -->
+                    <td class="num">2.449.024</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Sergipe</td> <!-- td = td - ata -->
+                    <td class="num">2.068.017</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Rondônia</td> <!-- td = td - ata -->
+                    <td class="num">1.562.409</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Tocantins</td> <!-- td = td - ata -->
+                    <td class="num">1.383.445</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Acre</td> <!-- td = td - ata -->
+                    <td class="num">733.559</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Amapá</td> <!-- td = td - ata -->
+                    <td class="num">669.526</td> <!-- td = td - ata -->
+                </tr>
+
+                <tr>
+                    <td>Roraima</td> <!-- td = td - ata -->
+                    <td class="num">450.479</td> <!-- td = td - ata -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td> <!-- td = td - ata -->
+            </tfoot>
+        </table>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a nesciunt veritatis fugiat quaerat? Accusantium officia vel rerum, eius deleniti consequuntur reiciendis, dolore placeat veniam mollitia minima, totam esse ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ratione pariatur incidunt corrupti in eius necessitatibus quo, qui distinctio, blanditiis, assumenda sequi facilis praesentium accusamus quos laboriosam suscipit tempora iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, enim accusantium molestias, aperiam mollitia cum officia rem deleniti perspiciatis amet, rerum corporis tempora! Tempore facilis in expedita, autem sapiente nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quos, mollitia sit ullam debitis rem quae quam sint sapiente facere, ipsa nesciunt ex repellendus! Optio fuga minus itaque tempora ex? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita adipisci eum unde? Delectus eius quis molestiae quibusdam. Ex animi aliquid aperiam autem aspernatur officiis quos error a dolore. Autem, aspernatur?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a nesciunt veritatis fugiat quaerat? Accusantium officia vel rerum, eius deleniti consequuntur reiciendis, dolore placeat veniam mollitia minima, totam esse ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ratione pariatur incidunt corrupti in eius necessitatibus quo, qui distinctio, blanditiis, assumenda sequi facilis praesentium accusamus quos laboriosam suscipit tempora iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, enim accusantium molestias, aperiam mollitia cum officia rem deleniti perspiciatis amet, rerum corporis tempora! Tempore facilis in expedita, autem sapiente nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quos, mollitia sit ullam debitis rem quae quam sint sapiente facere, ipsa nesciunt ex repellendus! Optio fuga minus itaque tempora ex? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita adipisci eum unde? Delectus eius quis molestiae quibusdam. Ex animi aliquid aperiam autem aspernatur officiis quos error a dolore. Autem, aspernatur?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a nesciunt veritatis fugiat quaerat? Accusantium officia vel rerum, eius deleniti consequuntur reiciendis, dolore placeat veniam mollitia minima, totam esse ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ratione pariatur incidunt corrupti in eius necessitatibus quo, qui distinctio, blanditiis, assumenda sequi facilis praesentium accusamus quos laboriosam suscipit tempora iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, enim accusantium molestias, aperiam mollitia cum officia rem deleniti perspiciatis amet, rerum corporis tempora! Tempore facilis in expedita, autem sapiente nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quos, mollitia sit ullam debitis rem quae quam sint sapiente facere, ipsa nesciunt ex repellendus! Optio fuga minus itaque tempora ex? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita adipisci eum unde? Delectus eius quis molestiae quibusdam. Ex animi aliquid aperiam autem aspernatur officiis quos error a dolore. Autem, aspernatur?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a nesciunt veritatis fugiat quaerat? Accusantium officia vel rerum, eius deleniti consequuntur reiciendis, dolore placeat veniam mollitia minima, totam esse ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ratione pariatur incidunt corrupti in eius necessitatibus quo, qui distinctio, blanditiis, assumenda sequi facilis praesentium accusamus quos laboriosam suscipit tempora iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, enim accusantium molestias, aperiam mollitia cum officia rem deleniti perspiciatis amet, rerum corporis tempora! Tempore facilis in expedita, autem sapiente nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quos, mollitia sit ullam debitis rem quae quam sint sapiente facere, ipsa nesciunt ex repellendus! Optio fuga minus itaque tempora ex? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita adipisci eum unde? Delectus eius quis molestiae quibusdam. Ex animi aliquid aperiam autem aspernatur officiis quos error a dolore. Autem, aspernatur?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a nesciunt veritatis fugiat quaerat? Accusantium officia vel rerum, eius deleniti consequuntur reiciendis, dolore placeat veniam mollitia minima, totam esse ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ratione pariatur incidunt corrupti in eius necessitatibus quo, qui distinctio, blanditiis, assumenda sequi facilis praesentium accusamus quos laboriosam suscipit tempora iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, enim accusantium molestias, aperiam mollitia cum officia rem deleniti perspiciatis amet, rerum corporis tempora! Tempore facilis in expedita, autem sapiente nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quos, mollitia sit ullam debitis rem quae quam sint sapiente facere, ipsa nesciunt ex repellendus! Optio fuga minus itaque tempora ex? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita adipisci eum unde? Delectus eius quis molestiae quibusdam. Ex animi aliquid aperiam autem aspernatur officiis quos error a dolore. Autem, aspernatur?</p>
+    </body>
+</html>
