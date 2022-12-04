@@ -143,6 +143,24 @@ main > section.normal > p
     padding: 10px;
 }
 
+main > section.img
+{
+    background-color: transparent;
+    background-image: url('../midia/brenno-espelho.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 50%;
+    height: 60%;
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 500px;
+    margin: auto;
+    box-shadow: 2px 2px 5px black inset;
+}
+
 
 
 footer
