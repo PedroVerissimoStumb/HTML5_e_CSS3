@@ -41,18 +41,6 @@ header > p
     font-size: 20px;
 }
 
-@keyframes rodar
-{
-    from
-    { 
-        transform: rotate(0deg);
-    }
-    to
-    { 
-        transform: rotate(360deg);
-    }
-}
-
 header > a > div.border /********************************************/
 {
     border: 15px groove rgb(30, 255, 0);
@@ -61,16 +49,47 @@ header > a > div.border /********************************************/
     height: 100px;
     margin: 2px auto;
     transition: 0.8s;
-    animation-name: rodar;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: rodar 5s linear infinite;
 }
 
-header > a >div.border:hover
+@keyframes rodar
 {
-    border-color: rgb(0, 54, 170);
-    transition: 0.8s;
+    0%
+    { 
+        transform: rotate(0deg);
+        border: 15px groove rgb(30, 255, 0);
+    }
+    25%
+    { 
+        transform: rotate(90deg);
+        border: 15px groove rgb(0, 54, 170);
+    }
+    50%
+    {
+        transform: rotate(180deg);
+        border: 15px groove rgb(30, 255, 0);
+    }
+    75%
+    {
+        transform: rotate(270deg);
+        border: 15px groove rgb(0, 54, 170);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        border: 15px groove rgb(30, 255, 0);
+    }
+}
+
+header > a > div.border > img /********************************************/
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: desrodar 5s linear infinite;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: -1px;
 }
 
 @keyframes desrodar
@@ -83,17 +102,6 @@ header > a >div.border:hover
     { 
         transform: rotate(-360deg); 
     }
-}
-
-header > a > div.border > img /********************************************/
-{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    animation-name: desrodar;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 main > section.normal
@@ -117,12 +125,12 @@ main > section.normal > nav > ul > li
 
 main > section.normal > nav > ul > li > a
 {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 main > section.normal > nav > ul > li > a:hover
 {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 main > section.normal > h2
@@ -130,7 +138,7 @@ main > section.normal > h2
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: bold;
-    background-image: linear-gradient(90deg, blue, transparent);
+    background-image: linear-gradient(90deg, blue 50%, red, transparent);
     padding: 5px;
     margin: 15px;
 }
