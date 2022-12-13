@@ -8,5 +8,5 @@ body
     background-color: #233eff;
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
 }
