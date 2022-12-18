@@ -14,13 +14,14 @@ html, body
 
 header
 {
-    background-color: rgb(148, 148, 148);
+    background-image: linear-gradient(180deg, rgb(148, 148, 148), rgb(48, 48, 48) 55%);
 }
 
 header > h1
 {
     padding: 10px;
     text-align: center;
+    color: white;
 }
 
 span.material-symbols-outlined
@@ -68,6 +69,7 @@ menu > ul > li > a:hover
 main
 {
     width: 90%;
+    max-width: 800px;
     background-color: white;
     margin: auto;
     padding: 10px;
@@ -85,4 +87,40 @@ main > article > p
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table
+{
+    border-collapse: collapse;
+    border: 3px solid black;
+    width: 65%;
+    max-width: 400px;
+    height: 220px;
+    text-align: center;
+    margin:  20px auto;
+}
+
+td, th
+{
+    border: 2px solid black;
+    padding: 2.5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th
+{
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+legend
+{
+    text-align: center;
+}
+
+table tr:nth-child(even)
+{
+    background-color: lightgray;
 }
