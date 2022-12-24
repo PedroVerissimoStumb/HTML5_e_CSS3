@@ -12,7 +12,7 @@
     <body onresize="mudouTamanho()" onmouse> <!-- onresize="Serve ara disparat um alerta ao sistema que mudou o tamanho da tela" -->
         <header>
             <h1>Meu site</h1>
-            <span class="material-symbols-outlined" onmouseenter="hover()">menu</span>
+            <span class="material-symbols-outlined" onclick="clicked()">menu</span>
             <menu id="itens">
                 <ul>
                     <li><a href="#">Opção 1</a></li>
@@ -83,7 +83,7 @@
             </article>
         </main>
         <script>
-            function hover()
+            function clicked()
             {
                 let itens = window.document.getElementById('itens');
                 if(itens.style.display == 'none')
