@@ -11,7 +11,7 @@ main
     top: 50vh;
     transform: translate(0px, -50%);
     width: 75%;
-    height: 500px;
+    height: 670px;
     background-color: rgb(255, 255, 255);
     margin: auto;
     border-radius: 10px;
@@ -56,6 +56,7 @@ main > section#login > div#formulario > form
 {
     padding: 10px;
     background-color: rgba(122, 122, 255, 0.443);
+    height: 50%;
 }
 
 main > section#login > div#formulario > form > input
@@ -95,5 +96,10 @@ main > section#login > div#formulario > form > p
 main > section#login > div#formulario > form > p > a
 {
     color: rgb(27, 27, 255);
+    text-decoration: underline;
+}
 
+main > section#login > div#formulario > form > p > a
+{
+    text-decoration: none;
 }
