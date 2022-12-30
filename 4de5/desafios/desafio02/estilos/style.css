@@ -40,6 +40,9 @@ main > section#login
     transform: translate(-50%, -50%);
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 main > section#login > div#image > div.img-src-not-remove
@@ -58,5 +61,4 @@ main > section#login > div#formulario
 {
     display: block;
     padding: 10px;
-    
 }
