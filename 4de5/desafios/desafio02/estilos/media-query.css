@@ -10,6 +10,8 @@
     main > section#login
     {
         width: 60%;
+        max-width: 800px;
+        height: 500px;
     }
 
     main > section#login > div#image
@@ -31,6 +33,10 @@
         float: right;
         width: 60%;
     }
+    div#formulario > p
+    {
+        font-size: 0.99em;
+    }
 }
 
 @media screen and (min-width: 992px)
@@ -44,25 +50,31 @@
     {
         width: 70%;
         max-width: 950px;
+        height: 500px;
     }
 
     main > section#login > div#image
     {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     main > section#login > div#image > div.img-src-not-remove
     {
-        float: left;
+        float: right;
         width: 100%;
         height: 100%;
     }
 
     section#login > div#formulario
     {
-        float: right;
+        float: left;
         width: 50%;
+    }
+
+    div#formulario > p
+    {
+        font-size: 1em;
     }
 }
